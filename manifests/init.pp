@@ -46,8 +46,6 @@ class pam (
   $vas_major_version                   = '4',
 ) {
 
-  include ::nsswitch
-
   case $::osfamily {
     'RedHat': {
       case $::operatingsystemmajrelease {
